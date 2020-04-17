@@ -2,19 +2,36 @@
 {% block content %}
 <div class='wrapper'>
     <main>
-      <section>
-            <a class="nav-item nav-link" href="{% url 'base-about' %}">About</a>
-         
-        </section>
-     <section>
-        <a class="nav-item nav-link" href="{% url 'base-art' %}">My art</a>
-    </section>
-          <section>
-            <a class="nav-item nav-link" href="{% url 'base-portfolio' %}">My portfolio</a>
-        </section>
         <section>
-            <a class="nav-item nav-link" href="{% url 'base-contact' %}">Contact</a>
+            <div class="vertical-text">
+
+            <a class="nav-item nav-link" href="{% url 'base-about' %}">About</a>
+        </div>
+
         </section>
+
+        <section>
+            <div class="vertical-text">
+
+            <a class="nav-item nav-link" href="{% url 'base-art' %}">My art</a>
+        </div>
+
+        </section>
+
+        <section>
+            <div class="vertical-text">
+
+            <a class="nav-item nav-link" href="{% url 'base-portfolio' %}">My portfolio</a>
+        </div>
+
+        </section>
+
+        <section>
+            <div class="vertical-text">
+                <a class="nav-item nav-link" href="{% url 'base-contact' %}">Contact</a>
+            </div>
+        </section>
+
     </main>
-  </div>
-  {% endblock content %}
+</div>
+{% endblock content %}

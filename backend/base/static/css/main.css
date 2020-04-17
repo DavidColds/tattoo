@@ -1,23 +1,30 @@
-/*This is using an autoprefixer.  Even though with Safari 9 flex will finally be 100% supported, it's still a good idea to support legacy.*/
+
 * {
   box-sizing: border-box;
 }
-body, html {
+
+body,
+html {
   /*take up all available height*/
   height: 100%
 }
+
 body {
   font: 100% 'Oswald', sans-serif;
 }
+
 /*This is to target IE11 only.  IE does not play nice with min-heights and column nowrap. More modifications will probably be needed, as it is a little buggy in IE11.  The new Edge browser is supposed to fix this flex bug and others.*/
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
   .wrapper {
     height: 100%;
   }
+
   main {
     min-height: 200px
   }
 }
+
 .wrapper {
   /*Fill all possible height with the wrapper. I believe height: 100% will also work just as well.*/
   min-height: 100%;
@@ -26,13 +33,15 @@ body {
   /*this is the key to keeping elements such as the nav at the top and the footer at the bottom.  This might not always be needed.*/
   justify-content: space-between;
 }
+
 /*I was lazy and I didn't create an image for the logo*/
-h1 { 
+h1 {
   padding: 10px;
   font-size: 2.7em;
-  color: rgb(245,235,245);
+  color: rgb(245, 235, 245);
   text-align: center;
 }
+
 /*You could also wrap this in a nav for extra semantic goodness*/
 a {
   text-decoration: none;
@@ -42,9 +51,11 @@ a {
   transition: all 0.5s ease-in-out;
   padding: 8px
 }
+
 a:hover {
   color: #000
 }
+
 main {
   display: flex;
   flex-flow: row wrap;
@@ -53,15 +64,17 @@ main {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+
 h2 {
   width: 100%;
-  background: rgb(75,75,75);
-  color: rgb(205,205,205);
+  background: rgb(75, 75, 75);
+  color: rgb(205, 205, 205);
   font-weight: 100;
   padding: 10px 0;
   text-align: center
 }
-main > section {
+
+main>section {
   margin: 2px;
   background-color: bisque;
   flex: 1 1 auto;
@@ -70,38 +83,54 @@ main > section {
   justify-content: center;
   padding-top: 20px
 }
-main > section > p {
+
+main>section>p {
   padding-bottom: 20px
 }
+
 /*Change these generic media queries to suit your needs, especially with retina displays*/
 @media screen and (max-width: 568px) {
   h1 {
     width: 100%;
     font-size: 2.0em
   }
+
   .nav {
     min-width: 100%;
     margin: auto;
     padding: 0;
   }
-  .nav > li {
+
+  .nav>li {
     flex: 1
   }
-  .nav > li > a {
+
+  .nav>li>a {
     font-size: 1.0em
   }
+
   h2 {
     font-size: 1.2em
   }
+
   main {
     /*go to a more vertical layout*/
     flex-flow: column nowrap;
   }
-  main > section {
+
+  main>section {
     width: 100%;
     border-bottom: 1px solid #ccc;
   }
-  main > section > p {
+
+  main>section>p {
     width: 100%
   }
+}
+
+
+
+.vertical-text{
+  transform: rotate(90deg);
+  font-size: 100px;
 }
