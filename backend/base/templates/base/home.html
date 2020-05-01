@@ -4,39 +4,44 @@
 
 
 
-<div class='wrapper'>
+<div class="wrapper">
     <div id="particles-js"><br></div>
 
-        <div class="frame-top"></div>
-        <div class="frame-bottom"></div>
-        <div class="frame-left"></div>
-        <div class="frame-right"></div>
-  
-<main>
-<div  class="container-fluid">
-    <div data-aos="fade-up"
-    data-aos-anchor-placement="top-center" class="row"> 
-        <section class="box col-xl">
-            <a class="nav-item nav-link" href="{% url 'base-art' %}">
-                <span class="btn"><h1>About</h1></span>
-            </a>
-        </section> 
-        
-        <section class="box col-xl">
-            <a class="nav-item nav-link" href="{% url 'base-portfolio' %}">
-                <span class="btn"><h1>Portfolio</h1></span>
-            </a>
-        </section>
+    <div class="frame-top"></div>
+    <div class="frame-bottom"></div>
+    <div class="frame-left"></div>
+    <div class="frame-right"></div>
+
+    <main>
+        <div class="container-fluid">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="row">
+                <section class="box col-xl">
+                    <a class="nav-item nav-link" href="{% url 'base-art' %}"> 
+                        <span class="btn">
+                            <h1>About</h1>
+                        </span>
+                    </a>
+                </section>
+
+                <section class="box col-xl">
+                    <a class="nav-item nav-link" href="{% url 'base-portfolio' %}">
+                        <span class="btn">
+                            <h1>Portfolio</h1>
+                        </span>
+                    </a>
+                </section>
 
 
-        <section class="box col-xl">
-            <a class="nav-item nav-link" href="{% url 'base-contact' %}">
-                <span class="btn"><h1>Contact</h1></span>
-            </a>
-        </section>
-    </div>  
-  </div>
-</main>
+                <section class="box col-xl">
+                    <a class="nav-item nav-link" href="{% url 'base-contact' %}">
+                        <span class="btn">
+                            <h1>Contact</h1>
+                        </span>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </main>
 </div>
 
 {% endblock content %}
