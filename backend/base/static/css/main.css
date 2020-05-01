@@ -5,7 +5,7 @@
 
 body,
 html {
-  /*take up all available height*/
+  background-color: rgb(44, 44, 44);
   height: 100%
 }
 
@@ -13,124 +13,163 @@ body {
   font: 100% 'Oswald', sans-serif;
 }
 
-/*This is to target IE11 only.  IE does not play nice with min-heights and column nowrap. More modifications will probably be needed, as it is a little buggy in IE11.  The new Edge browser is supposed to fix this flex bug and others.*/
-@media screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none) {
-  .wrapper {
-    height: 100%;
-  }
 
-  main {
-    min-height: 200px
-  }
-}
+
 
 .wrapper {
-  /*Fill all possible height with the wrapper. I believe height: 100% will also work just as well.*/
   min-height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  /*this is the key to keeping elements such as the nav at the top and the footer at the bottom.  This might not always be needed.*/
   justify-content: space-between;
 }
 
-/*I was lazy and I didn't create an image for the logo*/
-h1 {
-  padding: 10px;
-  font-size: 2.7em;
-  color: rgb(245, 235, 245);
-  text-align: center;
-}
 
-/*You could also wrap this in a nav for extra semantic goodness*/
 a {
   text-decoration: none;
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
   transition: all 0.5s ease-in-out;
   padding: 8px
 }
 
 a:hover {
-  color: #000
+  color: rgb(229, 255, 0)
 }
 
-main {
+.main {
   display: flex;
-  flex-flow: row wrap;
-  /*this will fill up the remaining space for our content*/
-  flex: 1 1 auto;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-  width: 100%;
-  background: rgb(75, 75, 75);
-  color: rgb(205, 205, 205);
-  font-weight: 100;
-  padding: 10px 0;
-  text-align: center
-}
-
-main>section {
-  margin: 2px;
-  background-color: bisque;
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  padding-top: 20px
-}
-
-main>section>p {
-  padding-bottom: 20px
-}
-
-/*Change these generic media queries to suit your needs, especially with retina displays*/
-@media screen and (max-width: 568px) {
-  h1 {
-    width: 100%;
-    font-size: 2.0em
-  }
-
-  .nav {
-    min-width: 100%;
-    margin: auto;
-    padding: 0;
-  }
-
-  .nav>li {
-    flex: 1
-  }
-
-  .nav>li>a {
-    font-size: 1.0em
-  }
-
-  h2 {
-    font-size: 1.2em
-  }
-
-  main {
-    /*go to a more vertical layout*/
-    flex-flow: column nowrap;
-  }
-
-  main>section {
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-  }
-
-  main>section>p {
-    width: 100%
-  }
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 
 
-.vertical-text{
-  transform: rotate(90deg);
-  font-size: 100px;
+
+
+/*****                                                               BTN ****/
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  color: #fff;
+  transition: .2s all;
 }
+.btn:after, .btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid rgb(190, 204, 0);
+  border-left: 5px solid rgb(202, 224, 1);
+}
+.btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid rgb(170, 182, 0);
+  border-right: 5px solid rgb(192, 189, 0);
+}
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.btn:hover:before, .btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*****                                                               end BTN ****/
+
+
+  .box {
+    flex-grow: 1;
+    background: rgb(3, 0, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+    cursor: pointer;
+    padding: 2em;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+ 
+  }
+  .box:hover {
+ 
+    background-color: rgb(3, 0, 156);
+    cursor: pointer;  }
+
+
+
+.row{
+  height:100vh;
+  }
+
+
+
+/*****                                                               Frames ****/
+.frame-bottom {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    width: calc(100% - 24px);
+    margin: 12px;
+    height: 3px;
+    background-color: #e39d58;
+    z-index: 2500;
+}
+
+.frame-top {
+  position: fixed;
+  display: block;
+  width: calc(100% - 24px);
+  margin: 12px;
+  height: 3px;
+  background-color: #e39d58;
+  z-index: 2500;
+}
+
+.frame-left {
+  position: fixed;
+  display: block;
+  height: calc(100% - 24px);
+  margin: 12px;
+  width: 3px;
+  background-color: #e39d58;
+  z-index: 2500;
+}
+
+.frame-right {
+  position: fixed;
+  display: block;
+  right: 0px;
+  height: calc(100% - 24px);
+  margin: 12px;
+  width: 3px;
+  background-color: #e39d58;
+  z-index: 2500;
+}
+/*****                                                              end Frames ****/
+
+
+

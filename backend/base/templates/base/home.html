@@ -1,37 +1,39 @@
 {% extends "base/base.html" %}
 {% block content %}
 <div class='wrapper'>
-    <main>
-        <section>
-            <div class="vertical-text">
+        <div class="frame-top"></div>
+        <div class="frame-bottom"></div>
+        <div class="frame-left"></div>
+        <div class="frame-right"></div>
 
-            <a class="nav-item nav-link" href="{% url 'base-about' %}">About</a>
-        </div>
-
+    
+<main>
+<div class="container-fluid">
+    <div class="row"> 
+        <section class="box col-xl">
+            <a class="nav-item nav-link" href="{% url 'base-art' %}">
+                <span class="btn"><h1>About</h1></span>
+            </a>
+        </section> 
+        
+        <section class="box col-xl">
+            <a class="nav-item nav-link" href="{% url 'base-portfolio' %}">
+                <span class="btn"><h1>Portfolio</h1></span>
+            </a>
         </section>
 
-        <section>
-            <div class="vertical-text">
 
-            <a class="nav-item nav-link" href="{% url 'base-art' %}">My art</a>
-        </div>
-
+        <section class="box col-xl">
+            <a class="nav-item nav-link" href="{% url 'base-contact' %}">
+                <span class="btn"><h1>Contact</h1></span>
+            </a>
         </section>
-
-        <section>
-            <div class="vertical-text">
-
-            <a class="nav-item nav-link" href="{% url 'base-portfolio' %}">My portfolio</a>
-        </div>
-
-        </section>
-
-        <section>
-            <div class="vertical-text">
-                <a class="nav-item nav-link" href="{% url 'base-contact' %}">Contact</a>
-            </div>
-        </section>
-
-    </main>
+    </div>  
+  </div>
+</main>
 </div>
+
+
+
+
 {% endblock content %}
