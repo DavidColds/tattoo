@@ -3,8 +3,8 @@
 }
 
 @font-face {
-        src: url(../fonts/OldeEnglish.ttf);
-        font-family: oldenglish;
+        src: url(../fonts/artdeco.ttf);
+        font-family: artdeco;
 }
 
 body {
@@ -12,7 +12,19 @@ body {
         background-color: #17182f;
 }
 
+#cover {
+        position: fixed;
+        z-index: 9997;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #131031;
+}
 
+.cover-display-none {
+        display: none;
+}
 
 
 .wrapper {
@@ -34,7 +46,7 @@ body {
 /*****                                                               BTN ****/
 
 .btn {
-        font-family: oldenglish;
+        font-family: artdeco;
         cursor: pointer;
         position: relative;
         padding: 15px 20px;
@@ -199,10 +211,8 @@ a h1 {
         height: 100%;
 }
 
-nav {
-        text-transform: uppercase;
+.nav {
         letter-spacing: 2px;
-        font-family: 'brandon-grotesque-black';
         font-size: 13px;
         color: #fff;
         float: right;
@@ -281,16 +291,16 @@ header {
         width: auto;
         height: auto;
         margin-top: 450px;
-        margin-left: 500px;
-        font-family: oldenglish;
+        font-family: artdeco;
+        margin-left: 600px;
         z-index: 2501;
         text-align: left;
         font-size: 9vw;
         line-height: 9vw;
-        color: #003181;
+        color: #acacac;
         text-align: left;
-        text-shadow: 0px 3px #bd8249;
-    }
+        text-shadow: 0px 3px #170061;
+}
 
 /*****                                                            END  ABOUT ****/
 
