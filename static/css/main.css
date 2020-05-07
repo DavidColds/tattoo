@@ -292,9 +292,14 @@ body {
     height: 100%;
 }
 
+.contain a:hover{
+    color: #e39d58;
+    text-decoration: none;
+}
+
 .roman-link {
     position: relative;
-    color: #FFF;
+    color: rgb(168, 157, 0);
     text-decoration: none;
     padding: 10px 20px;
     text-align: center;
