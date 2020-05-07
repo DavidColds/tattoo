@@ -14,20 +14,21 @@
 
     <link rel="stylesheet" href="static/css/main.css" type="text/css">
 
-
-
-
 </head>
 
-<body class="frame">
-    <div id="cover" class="animated lightSpeedOut" style="opacity: 0;"></div>
+<body>
+
+    <div id="cover" class="animated lightSpeedOut " style="opacity: 0;">
+    </div>
+    
+    <div class="container navigation"> 
     <ul class="nav justify-content-center">
 
-        <li class="nav-item">
+        <li class="nav-item animated fadeIn">
             <a class="nav-link">
                 <div class="contain">
                     <p>
-                        <a href="index.html" class="roman-link">
+                        <a href="index.html" class="roman-link  animated fadeInUp">
                             <span class="bg-large">
                       <span class="roman-top-left"></span>
                             <span class="roman-bottom-right"></span>
@@ -50,7 +51,7 @@
             <a class="nav-link">
                 <div class="contain">
                     <p>
-                        <a href="portfolio.html" class="roman-link">
+                        <a href="portfolio.html" class="roman-link  animated fadeInUp">
                             <span class="bg-large">
                       <span class="roman-top-left"></span>
                             <span class="roman-bottom-right"></span>
@@ -73,7 +74,7 @@
             <a class="nav-link">
                 <div class="contain">
                     <p>
-                        <a href="contact.html" class="roman-link">
+                        <a href="contact.html" class="roman-link animated fadeInUp">
                             <span class="bg-large">
                       <span class="roman-top-left"></span>
                             <span class="roman-bottom-right"></span>
@@ -93,60 +94,89 @@
             </a>
         </li>
     </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <div class="wrapper w0">
-            <h1>Pisano Tattoo</h1>
-            <h3>Pisano Art</h3>
-            <p>Consultation is by appointment only
-                <br> Adress
-                <br> Random adress
-                <br> Tel 312312312
-                <br>
-                <a href="index.html">Home
-                </a>
-                <br>
-                <br>
-                <a href="portfolio.html">Portfolio
-                </a>
-                <br>
-                <br>
-                <a href="contact.html.html">Contact
-
-
-            </p>
+</div>
+<div class="container my-5 z-depth-1">
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+  
+      <div class="row pr-lg-5">
+        <div class="col-md-7 mb-4">
+  
+          <div class="view animated fadeIn">
+            <img src="https://images.unsplash.com/photo-1507251217843-301ac7bf2afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1026&q=80" class="img-fluid" alt="smaple image">
+          </div>
+  
         </div>
-    </footer>
+        <div class="col-md-5 d-flex align-items-center">
+          <div>
+            
+            <h3 class="font-weight-bold mb-4">Material Design Blocks</h3>
+  
+              <p>Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
+    
+          </div>
+        </div>
+      </div>
+    </section>  
+  </div>
+
+<!-- Hero Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="frame">
+    <div class="wrapper w0">
+        <h1>Pisano Tattoo</h1>
+        <h3>Pisano Art</h3>
+        <p>Consultation is by appointment only
+            <br> Adress
+            <br> Random adress
+            <br> Tel 312312312
+            <br>
+            <a href="index.html">Home
+            </a>
+            <br>
+            <br>
+            <a href="portfolio.html">Portfolio
+            </a>
+            <br>
+            <br>
+            <a href="contact.html.html">Contact
+
+
+        </p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -162,7 +192,11 @@
     </script>
 
     <script src="static/js/main.js"></script>
-
+<script>
+    $('.carousel').carousel({
+  interval: 9000
+})
+</script>
 </body>
 
 </html>

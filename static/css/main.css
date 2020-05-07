@@ -14,14 +14,10 @@ General Styling
     font-family: hazeldeco;
 }
 
-html {
-    height: 100%;
-}
 
 body {
     margin: 0;
     background-color: #17182f;
-    height: 100%;
     padding: 1em;
 }
 
@@ -248,13 +244,7 @@ ABOUT PAGE
     background-color: #e39d58;
 }
 
-header {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 125px;
-    background-color: #272d3d;
-}
+
 
 .text-container {
     width: 100%;
@@ -273,18 +263,7 @@ header {
 
 /***** Menu BTN**/
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 
-.container-fluid {
-    background-color: white;
-    border: none;
-    box-shadow: none;
-}
 
 .contain {
     padding: 35px;
