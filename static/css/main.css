@@ -13,7 +13,28 @@ General Styling
     font-family: artdeco;
 }
 
+.about-body{
+        background: #191919;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: calc(100vh - 16px);
+        font-size: 16px;
+        background: repeating-linear-gradient(45deg, #fffff0, #fffff0 25px, #b5a642 25px, #b5a642 27px, #191919 29px, #191919 29.5px);
+        line-height: 1.4em;
+}
 
+.wrapper-about{
+    padding: 50px;
+    background: #181929;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 0 2px #b5a642, 0 0 0 4px #191919, 0 0 0 6px #b5a642;
+    margin: 20px auto;
+    width: 95%;
+}
 body {
     margin: 0;
     background-color: #0A0E28;
@@ -45,12 +66,6 @@ body {
     display: none;
 }
 
-.wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
 
 .main {
     display: flex;
@@ -512,13 +527,11 @@ ABOUT PAGE
 /***** About page Text**/
 
 .heading {
-    margin: 0 6rem;
     font-size: 5.8rem;
     font-weight: 700;
     color: #DCB13C;
   }
   .subheading {
-    margin: 2.5rem 6rem;
     color: #bcb2c0;
   }
   .btn.btn-margin {
@@ -548,10 +561,19 @@ FOOTER
 ============================================================= 
 */
 
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    padding-top: 50px;
+    z-index: 1;
+    background-color: #101233a6;
+}
 footer h1 {
     color: #e39d58;
     text-align: center;
-    line-height: 20px;
 }
 
 footer h3 {
@@ -565,7 +587,6 @@ footer p {
 }
 
 p {
-    font-family: artdeco;
     font-size: 18px;
     color: #272d3d;
     text-align: justify;
