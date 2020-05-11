@@ -9,16 +9,26 @@ General Styling
 }
 
 @font-face {
-    src: url(../fonts/hazeldeco.ttf);
+    src: url(../fonts/artdeco.ttf);
     font-family: artdeco;
-    font-family: hazeldeco;
 }
 
 
 body {
     margin: 0;
-    background-color: #17182f;
+    background-color: #0A0E28;
     padding: 1em;
+}
+
+
+#cover-index{
+    position: fixed;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1b31; 
 }
 
 #cover {
@@ -58,7 +68,7 @@ BTN
 */
 
 .btn {
-    font-family: hazeldeco;
+    font-family: artdeco;
     cursor: pointer;
     position: relative;
     padding: 15px 20px;
@@ -121,7 +131,7 @@ LANDING PAGE BOX
 ============================================================= 
 */
 
-.box {
+.box-index {
     flex-grow: 1;
     background: #17182f;
     display: flex;
@@ -136,16 +146,15 @@ LANDING PAGE BOX
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
+ 
 }
 
-.box:hover {
+
+.box-index:hover {
     background-color: #06060c;
     cursor: pointer;
 }
 
-.row {
-    height: 100vh;
-}
 
 
 /*
@@ -223,42 +232,6 @@ ABOUT PAGE
 }
 
 
-/*****Menu ****/
-
-.main-menu-container {
-    position: relative;
-    float: right;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-}
-
-.open-page-main {
-    position: relative;
-    float: left;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: 525px;
-    background-color: #e39d58;
-}
-
-
-
-.text-container {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-    letter-spacing: 4px;
-    font-size: 34px;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    z-index: 999;
-}
 
 
 /***** Menu BTN**/
@@ -534,52 +507,39 @@ ABOUT PAGE
 }
 
 
-/*****IMAGE ****/
 
-.art-history-pic {
-    background-image: url("https://images.unsplash.com/photo-1475695752828-6d2b0a83cf8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1621&q=80");
-}
 
-.image-square {
-    opacity: 0;
-    position: absolute;
-    margin-top: 90px;
-    margin-left: 90px;
-    z-index: 2500;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
+/***** About page Text**/
 
-.image-square-frame {
-    opacity: 0;
-    position: absolute;
-    width: 572px;
-    height: 572px;
-    margin-top: 190px;
-    margin-left: 190px;
-    background-color: transparent;
-    border: 2px solid #0055c3;
-    z-index: 2500;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.title-main-parallax {
-    opacity: 0;
-    position: absolute;
-    width: auto;
-    height: auto;
-    font-family: hazeldeco;
-    z-index: 2501;
-    text-align: left;
-    font-size: 9vw;
-    line-height: 9vw;
-    color: #001a62;
-    text-align: left;
-    text-shadow: 0px 3px #e39d58;
-}
+.heading {
+    margin: 0 6rem;
+    font-size: 5.8rem;
+    font-weight: 700;
+    color: #DCB13C;
+  }
+  .subheading {
+    margin: 2.5rem 6rem;
+    color: #bcb2c0;
+  }
+  .btn.btn-margin {
+    margin-left: 6rem;
+    margin-top: 3rem;
+  }
+  .btn.btn-lily {
+    background: linear-gradient(40deg, rgba(0, 0, 0, 0.7), #17182f);
+    color: #DCB13C;
+  }
+  .title {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    color: #DCB13C;
+  }
+  .subtitle {
+    color: #bcb2c0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6rem;
+  }
 
 
 /*
@@ -587,32 +547,6 @@ ABOUT PAGE
 FOOTER
 ============================================================= 
 */
-
-footer {
-    position: relative;
-    float: left;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    padding: 100px 50px;
-    z-index: 1;
-    background-color: #272d3d;
-}
-
-.w0 {
-    width: 100%;
-}
-
-.wrapper {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    height: auto;
-    z-index: 999;
-    overflow: none;
-}
 
 footer h1 {
     color: #e39d58;
@@ -631,7 +565,7 @@ footer p {
 }
 
 p {
-    font-family: 'brandon-grotesque-regular';
+    font-family: artdeco;
     font-size: 18px;
     color: #272d3d;
     text-align: justify;
