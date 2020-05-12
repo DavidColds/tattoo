@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="static/css/main.css" type="text/css">
+
 </head>
 
-<body>
-    <div class="frame-top"></div>
-    <div class="frame-bottom"></div>
-    <div class="frame-left"></div>
-    <div class="frame-right"></div>
+<body class="about-body">
+<div class="wrapper-portfolio"> 
     <div id="cover" class="animated lightSpeedOut " style="opacity: 0;">
     </div>
     
@@ -54,7 +56,7 @@
             <a class="nav-link">
                 <div class="contain">
                     <p>
-                        <a href="portfolio.html" class="roman-link  animated fadeInUp">
+                        <a href="about.html" class="roman-link  animated fadeInUp">
                             <span class="bg-large">
                       <span class="roman-top-left"></span>
                             <span class="roman-bottom-right"></span>
@@ -67,7 +69,7 @@
                       <span class="roman-top-left"></span>
                             <span class="roman-bottom-right"></span>
                             </span>
-                            Galery
+                            About
                         </a>
                     </p>
                 </div>
@@ -77,7 +79,7 @@
             <a class="nav-link">
                 <div class="contain">
                     <p>
-                        <a href="contact.html" class="roman-link animated fadeInUp">
+                        <a href="portfolio.html" class="roman-link animated fadeInUp">
                             <span class="bg-large">
                       <span class="roman-top-left"></span>
                             <span class="roman-bottom-right"></span>
@@ -90,7 +92,7 @@
                       <span class="roman-top-left"></span>
                             <span class="roman-bottom-right"></span>
                             </span>
-                            Contact
+                            Gallery
                         </a>
                     </p>
                 </div>
@@ -99,20 +101,115 @@
     </ul>
 </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+<div class="container z-depth-1 my-5 px-0">
+
+    <!--Section: Content-->
+    <section class="p-5 my-md-5 text-center" 
+      style="background-image: url(https://images.unsplash.com/photo-1510362753328-028a0e6b0e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80); background-size: cover; background-position: center center;">
+  
+      <!-- Section heading -->
+      <h3 class="text-center font-weight-bold text-black mt-5 mb-3">Contact Us</h3>
+      <!-- Section description -->
+      <h4 class="text-center font-weight-normal text-black mx-auto mb-4 pb-2">We love to hear from you!</h4>
+  
+      <form class="mb-5 mx-md-5" action="">
+  
+        <div class="row">
+          <div class="col-md-4 mb-4">
+  
+            <!-- Name -->
+            <input type="text" id="name" class="form-control" placeholder="Name">
+  
+          </div>
+          <div class="col-md-4 mb-4">
+  
+            <!-- Email -->
+            <input type="email" id="email" class="form-control" placeholder="Email">
+  
+          </div>
+          <div class="col-md-4 mb-4">
+  
+            <!-- Phone -->
+            <input type="Location" id="Location" class="form-control" placeholder="Tattoo Location">
+  
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-12 mb-4">
+  
+            <!-- Subject -->
+            <input type="text" id="subject" class="form-control" placeholder="Subject">
+  
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-12">
+  
+            <div class="form-group mb-4">
+              <textarea class="form-control rounded" id="message" rows="3" placeholder="How can we help?"></textarea>
+            </div>
+  
+            <div class="text-center">
+              <button type="submit" class="btn btn-elegant">Submit</button>
+            </div>
+  
+          </div>
+        </div>
+  
+      </form>
+  
+    </section>
+    <!--Section: Content-->
+  
+  
+  </div>
+
+<!-- Footer -->
+<footer>
+    <div class="wrapper">
+        <ul class="list-unstyled list-inline text-center py-2">
+        <div>
+            <h1>Pisano Art</h1>
+            <p>Consultation is by appointment only
+                <br> Adress
+                <br> Random adress
+                <br> Tel 312312312
+                <br>
+                <a href="index.html">Home
+                </a>
+                <br>
+                <br>
+                <a href="portfolio.html">Portfolio
+                </a>
+                <br>
+                <br>
+                <a href="contact.html">Contact
+            </p>
+        </div
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+</div>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+
+
+</script>
     <script src="static/js/main.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
+
 </body>
 
 </html>

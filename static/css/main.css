@@ -14,7 +14,7 @@ General Styling
 }
 
 .about-body{
-        background: #191919;
+        background: #04444c;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,10 +24,19 @@ General Styling
         background: repeating-linear-gradient(45deg, #fffff0, #fffff0 25px, #b5a642 25px, #b5a642 27px, #191919 29px, #191919 29.5px);
         line-height: 1.4em;
 }
-
+.wrapper-portfolio
+{
+    background: #04444c;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 0 2px #b5a642, 0 0 0 4px #191919, 0 0 0 6px #b5a642;
+    margin: 20px auto;
+    width: 95%;
+}
 .wrapper-about{
     padding: 50px;
-    background: #181929;
+    background: #04444c;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -148,7 +157,6 @@ LANDING PAGE BOX
 
 .box-index {
     flex-grow: 1;
-    background: #17182f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,8 +176,71 @@ LANDING PAGE BOX
 .box-index:hover {
     background-color: #06060c;
     cursor: pointer;
+    
 }
 
+
+
+.box-index:after,
+.box-index:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+
+.box-index:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid rgb(190, 204, 0);
+    border-left: 5px solid rgb(202, 224, 1);
+}
+
+.box-index:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid rgb(170, 182, 0);
+    border-right: 5px solid rgb(192, 189, 0);
+}
+
+.box-index:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: rgb(226, 222, 0)
+}
+
+.btn:hover:before,
+.btn:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+============================================================= 
+LANDING PAGE Logo
+============================================================= 
+*/
+
+
+.shadow {
+    position:absolute;
+    max-width:50%;
+    max-height:50%;
+    top:50%;
+    left:50%;
+    overflow:visible;
+}
+
+img.logo {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-50%;
+    margin-left:-50%;
+}
 
 
 /*
@@ -228,8 +299,7 @@ PARTICLES
 */
 
 #particles-js {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -554,6 +624,68 @@ ABOUT PAGE
     margin-bottom: 6rem;
   }
 
+/*
+============================================================= 
+GALLERY
+============================================================= 
+*/
+
+/*GrayScale*/
+.column#grayscale img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column#grayscale:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 ============================================================= 
@@ -569,7 +701,7 @@ footer {
     height: auto;
     padding-top: 50px;
     z-index: 1;
-    background-color: #101233a6;
+    background-color: #10123352;
 }
 footer h1 {
     color: #e39d58;
