@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- AOS -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
@@ -19,71 +23,61 @@
 
 </head>
 
-<body class="index_body">   
-
-  <div id="cover-index" class="animated lightSpeedOut " style="opacity: 0;">
-  </div>
+<body class="index_body max-width: 100% ">
 
 
-  <div class="wrapper">
-    <div id="particles-js">
+
+
+  <div class="max-width: 100% overflow: hidden wrapper">
+    <div data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="500"
+    data-aos-offset="0"id="particles-js">
+    </div>
       <div class="container-fluid">
-        <div id="title">
+        <div>
+          <div class="shadow overflow: hidden animate__animated animate__fadeInLeftBig "><img
+              class="logo overflow: hidden" src="static/logo/logo1.2.png" /></div>
 
-          <div class="shadow"><img class="logo" src="static/logo/logo.png" /></div>
-
-      </div>
-
+          <div class="shadow animate__animated animate__fadeInRightBig"><img
+              class="logo overflow: hidden" src="static/logo/logo1.png" /></div>
+        </div>
       </div>
     </div>
   </div>
 
 
 
+  <main>
+    <div class="container-fluid">
+      <div data-aos="fade-up" data-aos="slide-up" class="row" style="height: 100vh;">
+        <section class="box-index col-xl">
+          <a class="nav-item nav-link " href="about.html">
+            <span class="btn">
+              <h1>About</h1>
+            </span>
+          </a>
+        </section>
+
+        <section class="box-index col-xl">
+          <a class="nav-item nav-link" href="portfolio.html">
+            <span class="btn">
+              <h1>Portfolio</h1>
+            </span>
+          </a>
+        </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <main>
-      <div class="container-fluid">
-        <div data-aos="fade-up" data-aos="slide-up" class="row" style="height: 100vh;">
-          <section class="box-index col-xl">
-            <a class="nav-item nav-link " href="about.html">
-              <span class="btn">
-                <h1>About</h1>
-              </span>
-            </a>
-          </section>
-
-          <section class="box-index col-xl">
-            <a class="nav-item nav-link" href="portfolio.html">
-              <span class="btn">
-                <h1>Portfolio</h1>
-              </span>
-            </a>
-          </section>
-
-
-          <section class="box-index col-xl">
-            <a class="nav-item nav-link" href="contact.html">
-              <span class="btn">
-                <h1>Contact</h1>
-              </span>
-            </a>
-          </section>
-        </div>
+        <section class="box-index col-xl">
+          <a class="nav-item nav-link" href="contact.html">
+            <span class="btn">
+              <h1>Contact</h1>
+            </span>
+          </a>
+        </section>
       </div>
-    </main>
+    </div>
+  </main>
 
 
 
