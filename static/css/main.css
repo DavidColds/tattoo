@@ -13,6 +13,10 @@ General Styling
     font-family: artdeco;
 }
 
+#index_body{
+    overflow-x: hidden;
+
+}
 .about-body {
     background: #04444c;
     display: flex;
@@ -47,8 +51,6 @@ General Styling
 }
 
 body {
-    max-width: 100% !important;
-    overflow: hidden !important;
     margin: 0;
     background-color: #04444c;
     padding: 1em;
