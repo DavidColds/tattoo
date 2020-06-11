@@ -9,9 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="static/css/main.css" type="text/css">
 
@@ -98,50 +99,50 @@
         </div>
 
 
-        <div class="container my-5 py-5 z-depth-1">
-            <section data-aos="fade-up" data-aos="slide-up" class="dark-grey-text text-center">
-                <h1 class="font-weight-bold pt-4 mb-4">My Gallery</h1>
-                <h5 class="font-weight-bold font-italic mb-5">At vero eos et accusamus et iusto odio dignissimos qui
-                    cupiditate non provident.</h5>
-                <div class="row mx-lg-5 mx-md-3">
+        <div class="container my-6 py-6 z-depth-1">
+            <section data-aos="fade-up" data-aos="slide-up" class="text-center">
+                <h1 class="font-weight-bold pt-4 mb-4" style="color: #b5a642;">My Gallery</h1>
+                <div class="row">
 
-                    <div class="col-md-6 mb-4">
-                        <div id="grayscale" class="view mb-5">
+                    <div class="col-md-6 mb-4 mb-md-0">
+
+                        <div class="view overlay z-depth-1-half">
                             <a href="tattoo.html" id="grayscale" class="col-md-6 column">
-                                <img src="https://images.unsplash.com/photo-1482375702222-03a768d5ea3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                                    class="img-fluid" alt="smaple image">
+                                <div class="mask rgba-white-light">
+                                    <img src="https://images.unsplash.com/photo-1482375702222-03a768d5ea3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                        class="img-fluid" alt="">
+                                </div>
                             </a>
                         </div>
-                        <h5 class="font-weight-normal text-muted">My Tattooes</h5>
+
+                        <h1 class="font-weight-normal text-muted">My Tattooes</h1>
                     </div>
 
                     <div class="col-md-6 mb-4">
-                        <div id="grayscale" class="view mb-5">
-                            <a href="https://www.instagram.com/pisanoartgallery/" target="blank" id="grayscale" class="col-md-6 column">
-                                <img src="https://images.unsplash.com/photo-1551913902-c92207136625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                                    class="img-fluid" alt="smaple image">
+                        <div class="view overlay z-depth-1-half">
+                            <a href="https://www.instagram.com/pisanoartgallery/" target="blank" id="grayscale"
+                                class="col-md-6 column">
+                                <div class="mask rgba-white-light">
+                                    <img src="https://images.unsplash.com/photo-1551913902-c92207136625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                        class="img-fluid" alt="">
+                                </div>
                             </a>
                         </div>
-                        <h5 class="font-weight-normal text-muted">My Art</h5>
+                        <h1 class="font-weight-normal text-muted">My Art</h1>
                     </div>
 
                 </div>
             </section>
-
         </div>
 
-
-
         <!-- Footer -->
-        <footer>
+        <footer class="animate__animated animate__fadeInUpBig">
             <div class="wrapper">
-                <ul class="list-unstyled list-inline text-center py-2">
-                    <div>
+                <div class="container">
+                    <ul class="list-unstyled list-inline text-center py-2">
                         <h1>Pisano Art</h1>
                         <p>Consultation is by appointment only
-                            <br> Adress
-                            <br> Random adress
-                            <br> Tel 312312312
+                            <br>
                             <br>
                             <a href="index.html">Home
                             </a>
@@ -152,30 +153,42 @@
                             <br>
                             <br>
                             <a href="contact.html">Contact
+                                <br>
+                                <br>
+                                <a class="fab fa-instagram" href="https://www.instagram.com/pisanoartgallery/"
+                                    target="blank">Art</a>
+                                <br>
+                                <br>
+                                <a class="fab fa-instagram" href="https://www.instagram.com/pisanotattoo/"
+                                    target="blank">Tattooes</a>
                         </p>
-                    </div </ul> </div> </footer> </div> <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
-                        crossorigin="anonymous">
+                    </ul>
+                </div>
+                <a href="https://www.facebook.com/David-Webbyr%C3%A5-108233977580932" target="blank">
+                    <h3 class="">Made with <i class="fas fa-heart mx-1"></i> by David Webbyrå</h3>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" crossorigin="anonymous">
 
-                    </script>
-                    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
-                    </script>
-                    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
 
-                    <script src="static/js/main.js"></script>
+    <script src="static/js/main.js"></script>
 
 </body>
 

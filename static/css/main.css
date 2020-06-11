@@ -13,10 +13,11 @@ General Styling
     font-family: artdeco;
 }
 
-#index_body{
+#index_body {
     overflow-x: hidden;
 
 }
+
 .about-body {
     font-family: artdeco;
     background: #04444c;
@@ -28,6 +29,10 @@ General Styling
     font-size: 16px;
     background: repeating-linear-gradient(45deg, #fffff0, #fffff0 25px, #b5a642 25px, #b5a642 27px, #191919 29px, #191919 29.5px);
     line-height: 1.4em;
+}
+
+.text-muted {
+    color: #b5a642 !important;
 }
 
 .wrapper-portfolio {
@@ -243,7 +248,7 @@ LANDING PAGE Logo
 
 img.logo {
     max-width: 100%;
-overflow: hidden;
+    overflow: hidden;
     position: relative;
     max-width: 100%;
     max-height: 100%;
@@ -681,7 +686,7 @@ GALLERY Tatoo
 .img-fluid {
     max-width: 100%;
     height: auto;
-  }
+}
 
 
 
@@ -694,17 +699,18 @@ FAQ
 
 
 .faq-title h2 {
-  color: #f9e09f;
-  position: relative;
-  margin-bottom: 45px;
-  display: inline-block;
-  font-weight: 600;
-  line-height: 1;
+    color: #f9e09f;
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .faq-title h3 {
-    color:#f9e09f;
+    color: #f9e09f;
 }
+
 .faq-title h2::before {
     content: "";
     position: absolute;
@@ -715,34 +721,35 @@ FAQ
     bottom: -25px;
     margin-left: -30px;
 }
+
 .faq-title p {
-  padding: 0 190px;
-  margin-bottom: 10px;
+    padding: 0 190px;
+    margin-bottom: 10px;
 }
 
 .faq {
-  background: #001c20;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
+    background: #001c20;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
 }
 
 .faq .card {
-  border: none;
-  background: none;
-  border-bottom: 1px dashed #CEE1F8;
+    border: none;
+    background: none;
+    border-bottom: 1px dashed #CEE1F8;
 }
 
 .faq .card .card-header {
-  padding: 0px;
-  border: none;
-  background: none;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+    padding: 0px;
+    border: none;
+    background: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
-.faq .card .card-header:hover h5{
+.faq .card .card-header:hover h5 {
     background: #002328;
     padding-left: 10px;
     color: #f9e09f;
@@ -753,65 +760,65 @@ FAQ
 
 
 .faq .card .card-header .faq-title {
-  width: 100%;
-  text-align: left;
-  padding: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-weight: 300;
-  font-size: 30px;
-  letter-spacing: 1px;
-  color: rgb(182, 182, 182);
-  text-decoration: none !important;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(182, 182, 182);
+    text-decoration: none !important;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .faq .card .card-header .faq-title .badge {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 14px;
-  float: left;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  text-align: center;
-  background: #000e10;
-  font-size: 17px;
-  margin-right: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 14px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    text-align: center;
+    background: #000e10;
+    font-size: 17px;
+    margin-right: 20px;
 }
 
 .faq .card .card-body {
-  padding: 30px;
-  padding-left: 35px;
-  padding-bottom: 16px;
-  font-weight: 400;
-  font-size: 26px;
-  color: #6F8BA4;
-  line-height: 28px;
-  letter-spacing: 1px;
-  border-top: 1px solid rgb(119, 128, 0);
+    padding: 30px;
+    padding-left: 35px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 26px;
+    color: #6F8BA4;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: 1px solid rgb(119, 128, 0);
 }
 
 .faq .card .card-body p {
-  margin-bottom: 14px;
-  font-size: 30px;
+    margin-bottom: 14px;
+    font-size: 30px;
 }
 
 @media (max-width: 991px) {
-  .faq {
-    margin-bottom: 30px;
-  }
-  .faq .card .card-header .faq-title {
-    line-height: 26px;
-    margin-top: 10px;
-  }
+    .faq {
+        margin-bottom: 30px;
+    }
+
+    .faq .card .card-header .faq-title {
+        line-height: 26px;
+        margin-top: 10px;
+    }
 }
 
 
