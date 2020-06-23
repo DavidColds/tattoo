@@ -9,9 +9,10 @@
   <!-- Bootstrap CSS -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
@@ -106,8 +107,8 @@
       <div class="container">
         <div class="row">
           <!-- ***** FAQ Start ***** -->
-          <div class="col-md-12">
 
+          <div data-aos="zoom-in-down" class="col-md-12">
             <div class="faq-title text-center pb-3">
               <h2>Frequently Asked Questions
                 <br>
@@ -127,10 +128,11 @@
               </h2>
             </div>
           </div>
+
           <div class="col-md-12">
             <div class="faq" id="accordion">
 
-              <div class="card">
+              <div class="card animate__animated animate__fadeInLeft ">
                 <div class="card-header" id="faqHeading-1">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true"
@@ -141,14 +143,14 @@
                 </div>
                 <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
                   <div class="card-body">
-                    <p>All clients needs to be 18 years or older. No undantag(?)
+                    <p>All clients needs to be 18 years or older. No exceptions!
                       Always bring your ID.</p>
                   </div>
                 </div>
               </div>
 
 
-              <div class="card">
+              <div class="card animate__animated animate__fadeInUpBig">
                 <div class="card-header" id="faqHeading-2">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false"
@@ -169,7 +171,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card animate__animated animate__fadeInLeft">
                 <div class="card-header" id="faqHeading-3">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false"
@@ -186,7 +188,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+
+              <div class="card animate__animated animate__fadeInUpBig">
                 <div class="card-header" id="faqHeading-4">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false"
@@ -211,7 +214,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+
+              <div class="card animate__animated animate__fadeInLeft">
                 <div class="card-header" id="faqHeading-5">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false"
@@ -226,7 +230,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+
+              <div class="card animate__animated animate__fadeInUpBig">
                 <div class="card-header" id="faqHeading-6">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false"
@@ -242,7 +247,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+
+              <div class="card animate__animated animate__fadeInLeft">
                 <div class="card-header" id="faqHeading-7">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false"
@@ -274,7 +280,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+
+              <div class="card animate__animated animate__fadeInUpBig">
                 <div class="card-header" id="faqHeading-8">
                   <div class="mb-0">
                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8" data-aria-expanded="false"
@@ -299,6 +306,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -308,60 +316,42 @@
     <div class="container z-depth-1 my-5 px-0">
 
       <!--Section: Content-->
-      <section class="p-5 my-md-5 text-center"
-        style="background-image: url(https://images.unsplash.com/photo-1510362753328-028a0e6b0e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80); background-size: cover; background-position: center center;">
+      <section data-aos="zoom-in" class="container my-5 py-5 z-depth-1"
+        style="background-image: url(https://images.unsplash.com/photo-1581985377113-230c76371627?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80); background-size: cover; background-position: center center;">
 
         <!-- Section heading -->
-        <h3 class="text-center font-weight-bold text-black mt-5 mb-3">Contact Us</h3>
+        <h3 class="text-center font-weight-bold text-white lighten-1 mt-5 mb-3">Contact Me</h3>
         <!-- Section description -->
-        <h4 class="text-center font-weight-normal text-black mx-auto mb-4 pb-2">We love to hear from you!</h4>
+        <h4 class="text-center font-weight-normal text-white mx-auto mb-4 pb-2">I would love to hear from you!</h4>
 
-        <form class="mb-5 mx-md-5" action="">
-
+        <form action="success.html" name="contact" method="POST" data-netlify="true">
           <div class="row">
-            <div class="col-md-4 mb-4">
-
-              <!-- Name -->
-              <input type="text" id="name" class="form-control" placeholder="Name">
-
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" name="name" class="form-control white-text">
+                <label for="contact-name" class="">Name</label>
+              </div>
             </div>
-            <div class="col-md-4 mb-4">
-
-              <!-- Email -->
-              <input type="email" id="email" class="form-control" placeholder="Email">
-
-            </div>
-            <div class="col-md-4 mb-4">
-
-              <!-- Phone -->
-              <input type="Location" id="Location" class="form-control" placeholder="Tattoo Location">
-
+            <div class="col-md-6">
+              <div class="md-form mb-0 ">
+                <input type="email" id="contact-email"  class="form-control white-text " >
+                <label for="contact-email " class="">Email</label>
+              </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-12 mb-4">
-
-              <!-- Subject -->
-              <input type="text" id="subject" class="form-control" placeholder="Subject">
-
-            </div>
-          </div>
 
           <div class="row">
             <div class="col-md-12">
-
-              <div class="form-group mb-4">
-                <textarea class="form-control rounded" id="message" rows="3" placeholder="How can we help?"></textarea>
+              <div class="md-form">
+                <textarea name="message" class="form-control md-textarea white-text" rows="3"></textarea>
+                <label for="contact-message">Message</label>
               </div>
-
-              <div class="text-center">
-                <button type="submit" class="btn btn-elegant">Submit</button>
-              </div>
-
             </div>
           </div>
-
+          <div class="text-center">
+            <button type="submit" class="btn btn-elegant">Send</button>
+          </div>
         </form>
 
       </section>
@@ -409,14 +399,16 @@
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js">
   </script>
-
-
+  <script>
+    AOS.init();
   </script>
   <script src="static/js/main.js"></script>
 
