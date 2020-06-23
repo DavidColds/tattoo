@@ -706,7 +706,9 @@ GALLERY Tatoo
 FAQ / CONTACT
 ============================================================= 
 */
-
+.form-control{
+    font-size: 2rem;
+}
 .md-form label {
     position: absolute;
     top: 0;
