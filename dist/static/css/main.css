@@ -27,7 +27,7 @@ General Styling
     flex-direction: column;
     min-height: calc(100vh - 16px);
     font-size: 16px;
-    background: repeating-linear-gradient(45deg, #fffff0, #fffff0 25px, #b5a642 25px, #b5a642 27px, #191919 29px, #191919 29.5px);
+    background: repeating-linear-gradient(45deg, #04444c, #2D3258 25px, #304B78 25px, #DBB13B 27px, #DBB13B 29px, #0A0E29 29.5px);
     line-height: 1.4em;
 }
 
